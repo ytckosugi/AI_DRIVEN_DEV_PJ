@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Backlog Notify
-        uses: bicstone/backlog-notify@master
+        uses: bicstone/backlog-notify@masterああ
         with:
           host: "yhddigital.backlog.com"
           api_key: ${{ secrets.BACKLOG_API_KEY }}
