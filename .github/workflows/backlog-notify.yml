@@ -1,0 +1,15 @@
+name: Backlog Notify
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize, closed]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Backlog Notify
+        uses: bicstone/backlog-notify@v1
+        with:
+          host: "yhddigital.backlog.com"
+          api_key: ${{ secrets.BACKLOG_API_KEY }}
